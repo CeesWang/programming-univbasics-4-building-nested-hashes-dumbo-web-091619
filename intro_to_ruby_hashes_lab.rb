@@ -22,7 +22,7 @@ def monopoly_with_third_tier
   if new_hash[:railroads][:rent_in_dollars]
   else
     new_hash[:railroads][:rent_in_dollars] = {
-      :names => 3,
+      :owner => 3,
       :owner2 => 3,
       :owner3 => 4,
       :owner4 => 3
