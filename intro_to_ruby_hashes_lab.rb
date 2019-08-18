@@ -27,7 +27,9 @@ def monopoly_with_third_tier
       :owner3 => 4,
       :owner4 => 3
     }
-    new_hash[:railroads][:names] = 4
+    new_hash[:railroads][:names] = {
+      :railroad => 1
+    }
   end
   new_hash 
   # When you start writing the implementation for this method, copy the Hash
