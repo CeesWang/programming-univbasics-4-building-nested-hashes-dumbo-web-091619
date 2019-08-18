@@ -33,6 +33,8 @@ def monopoly_with_third_tier
       :railroad2 => 1,
       :railroad3 => 1
     }
+    
+    new_hash[:railroads][:rent_in_dollars][]
   end
   new_hash 
   # When you start writing the implementation for this method, copy the Hash
