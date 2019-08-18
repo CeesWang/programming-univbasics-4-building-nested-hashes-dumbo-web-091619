@@ -19,14 +19,16 @@ end
 
 def monopoly_with_third_tier
   new_hash = monopoly_with_second_tier
-  if new_hash[:railroads][:rent_in_dollars]
+  if new_hash[:railroads][:rent_in_dollars] || new_hash[:railroads][:names]  
   else
-    new_hash[:railroads][:rent_in_dollars] = {
-      :owner => 3,
-      :owner2 => 3,
-      :owner3 => 4,
-      :owner4 => 3
-    }
+    new_hash[:railroad => {
+      :rent_in_dollars = {
+        :owner => 3,
+        :owner2 => 3,
+        :owner3 => 4,
+        :owner4 => 3
+      }  
+    }]
   end
   new_hash 
   # When you start writing the implementation for this method, copy the Hash
